@@ -16,3 +16,18 @@ couleurs = {VIDE: "white", ARBRE: "green", FEU: "red"}
 cellule = [[None] * hauteur for i in range(largeur)]
 state = [[ARBRE if random.random() < 0.6 else VIDE for j in range(hauteur)] for k in range(largeur)] #Placement des arbres : On suppose que la forêt est remplie de 60% d'arbres et le reste n'est que du vide
 running = False
+
+#Allumer le feu initial
+def init_fire() :
+  for i in range(hauteur) :
+    if random.random() <= 0.1 : # en 10%
+      state[i][0] = FEU #On suppose ici que l'incendie débute au niveau de ka première ligne au dessus et se déplace en parallèle
+
+def transform() :
+  for sx , sy in [(0,1),(0,-1),(-1,0)] :
+    if state[x][y] == ARBRE and any(state[(x+sx)%hauteur][(y+sy)%largeur]) == FEU :
+      state[x][y] = FEU
+    elif state[x][y] == FEU :
+      state[x][y] = VIDE
+      
+  
