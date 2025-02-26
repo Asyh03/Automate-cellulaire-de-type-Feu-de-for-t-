@@ -4,7 +4,7 @@
 Ce projet est une simulation d'un automate cellulaire modélisant la propagation d'un incendie dans une forêt. Il est réalisé en Python avec la bibliothèque Tkinter pour l'affichage graphique.
 
 ## Fonctionnalités
-🌳 Forêt générée aléatoirement avec 60% d'arbres au départ.
+🌳 Forêt générée aléatoirement avec 60% d'arbres au départ.\br
 🔥 Départ de feu aléatoire sur 10% des arbres de la première ligne.
 ▶️ Démarrer / Arrêter la simulation avec un bouton.
 🔄 Réinitialisation de la simulation.
