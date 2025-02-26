@@ -16,7 +16,10 @@ Ce projet est une simulation d'un automate cellulaire modélisant la propagation
 
 
 
+
  
-![1](https://github.com/user-attachments/assets/db87a516-33eb-48bd-a8f5-183465bf3b01)
+![1](https://github.com/user-attachments/assets/db87a516-33eb-48bd-a8f5-183465bf3b01) 
+
+![2](https://github.com/user-attachments/assets/ba8825a6-a4eb-4394-a75d-8a2592afa0d4)
 
 
