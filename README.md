@@ -13,7 +13,7 @@ Ce projet est une simulation d'un automate cellulaire modélisant la propagation
 - Un arbre peut s'enflammer si l'un de ses voisins est en feu.
 - Un arbre en feu devient une cellule vide après un tour.
 - Les bords de la grille sont connectés.
-
+    ## VISUALIASATION
 - Avant
   
    ![1](https://github.com/user-attachments/assets/db87a516-33eb-48bd-a8f5-183465bf3b01) 
