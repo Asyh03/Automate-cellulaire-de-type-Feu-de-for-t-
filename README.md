@@ -2,6 +2,7 @@
 
  ## Description
 Ce projet est une simulation d'un automate cellulaire modélisant la propagation d'un incendie dans une forêt. Il est réalisé en Python avec la bibliothèque Tkinter pour l'affichage graphique.
+Son principe est presque "similaire" à celui du Jeu de la vie
 
 ## Fonctionnalités
 - 🌳 Forêt générée aléatoirement avec 60% d'arbres au départ.
@@ -13,7 +14,7 @@ Ce projet est une simulation d'un automate cellulaire modélisant la propagation
 - Un arbre peut s'enflammer si l'un de ses voisins est en feu.
 - Un arbre en feu devient une cellule vide après un tour.
 - Les bords de la grille sont connectés.
-    ## VISUALISATION
+    ## 🧐VISUALISATION
 - Avant
   
    ![1](https://github.com/user-attachments/assets/db87a516-33eb-48bd-a8f5-183465bf3b01) 
