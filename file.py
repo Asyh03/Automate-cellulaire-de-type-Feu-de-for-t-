@@ -27,7 +27,7 @@ def draw() :
 def init_fire() :
   for i in range(hauteur) :
     if random.random() <= 0.1 : # feu à 10%
-      state[i][0] = FEU #On suppose ici que l'incendie débute au niveau de ka première ligne au dessus et se déplace en parallèle
+      state[i][0] = FEU #On suppose ici que l'incendie débute au niveau de la première ligne au dessus 
 
 #Conditions de l'incendie de la forêt
 def transform() :
@@ -39,7 +39,7 @@ def transform() :
           if state[x][y] == ARBRE and any(state[(x+dx) % largeur][(y+dy) % hauteur] == FEU for dx, dy in [(-1,0), (1,0), (0,-1), (0,1)]): #Un arbre prend feu si l'arbre qui est est son voisin prend feu sachant que dx et dy constituent les voisins directs des arbres ie gauche,droite,haut, bas
               new_state[x][y] = FEU
           elif state[x][y] == FEU : #Sinon si l'arbre est déjà en feu, on aura que du vide ou de la cendre
-              new_state[x][y] = FEU
+              new_state[x][y] = VIDE
     state = new_state #On actualise à chaque fois l'état de chaque cellules de la grille
     draw()
 
