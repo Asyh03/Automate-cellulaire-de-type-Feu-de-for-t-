@@ -42,6 +42,7 @@ def transform() :
               new_state[x][y] = VIDE
     state = new_state #On actualise à chaque fois l'état de chaque cellules de la grille
     draw()
+    window.after(100, transform) # on met à 100ms pour voir la simulation en un click
 
 #Gérer l'arrêt du programme
 def start_stop():
